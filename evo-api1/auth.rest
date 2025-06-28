@@ -1,0 +1,46 @@
+### Ubah password
+POST localhost/evo-ss-api/auth HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYUxlbmdrYXAiOiJKZWZmcnkgQW5na2FzYXJpIiwidXNlcm5hbWUiOiJqZWYiLCJ1c2VyTGV2ZWwiOjEsImlhdCI6MTY0NjM2MDM2MCwiZXhwIjoxNjQ2MzgxOTYwfQ.Trgojykih9zxOabYhZQkScWHyO4oY74db6baR9GpZ1Y
+
+type=changePassword
+&pass=122
+&newPass=123
+&confirmPass=123
+
+### Reset password
+POST localhost/evo-ss-api/auth HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+type=resetPassword
+&verifyToken=4YQ7zwncP06DDs3Fyw9f9P0HN7PB8pFSEMpU8H5555QtK4QtGt11SSbxrSm3gR6l
+&idUser=1
+&pass=123
+&confirmPass=123
+
+### Login user
+POST https://ss-api.evnbdev.com/auth HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+type=signin
+&username=jef
+&pass=123
+
+### Tambah user
+# Jika userLevel = 2 idCabang wajib diisi
+# Jika userLevel = 3 idLokasi wajib diisi
+POST localhost/evo-ss-api/auth HTTP/1.1 
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+type=signup
+&namaLengkap=Admin 3
+&username=adm3
+&pass=123
+&confirmPass=123
+&userLevel=3
+&idCabang=5
+&idLokasi=5

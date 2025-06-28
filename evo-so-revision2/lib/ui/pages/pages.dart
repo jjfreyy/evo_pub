@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+import 'dart:async';
+import 'package:flutter_login/flutter_login.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:jwt_decode/jwt_decode.dart';
+import 'package:socket_io_client/socket_io_client.dart';
+import 'package:proste_indexed_stack/proste_indexed_stack.dart';
+
+import '../../blocs/blocs.dart';
+import '../../models/models.dart';
+
+part 'splash.dart';
+part 'login_page.dart';
+part 'dashboard_page.dart';
+part 'main_page.dart';
+part 'kat_brg_page.dart';
+part 'error_page_500.dart';
+part 'barang_page.dart';
+part 'paket_page.dart';
+part 'paket_detail_page.dart';
+part 'paket_detail_range_page.dart';
+part 'profile_page.dart';
+part 'ganti_password_page.dart';
+part 'checkout_page.dart';
+part 'customers_page.dart';
+part 'display_page.dart';
+part 'display_pending_acc_kacab_page.dart';
+part 'detail_transaksi_page.dart';

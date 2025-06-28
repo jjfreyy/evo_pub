@@ -1,0 +1,30 @@
+POST https://ss-api.evnbdev.com/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYUxlbmdrYXAiOiJKZWZmcnkgQW5na2FzYXJpIiwidXNlcm5hbWUiOiJqZWYiLCJ1c2VyTGV2ZWwiOjEsImlkQ2FiYW5nIjpudWxsLCJjYWJhbmciOm51bGwsImlkTG9rYXNpIjpudWxsLCJsb2thc2kiOm51bGwsImlhdCI6MTY0ODA5MTk3MywiZXhwIjoxNjQ4MTEzNTczfQ.eKnlak_6_VjKt5JsWexLFB-7HHMIN63h94-Uau5hbpo
+
+type=complaints
+&tgl1=2022-03-05
+&tgl2=2022-03-31
+&st=0
+
+###
+POST https://fcm.googleapis.com/fcm/send
+Authorization: key=AAAAR2qPvqs:APA91bGi6K-V82yBW4_OEU8FJmRxJXoQC4JF1wMAb78IyihB8Kf8J7CkUKl-TCKQSP2RZXj4Nn3fCCj46sEE19yaB4QH5KdCPaCNRrDZQyj0Z7_wrRiUOL2FiE5eEe_m1T-n_TgqUjuR
+Content-Type: application/json
+
+{
+    "to": "/topics/jef",
+    "notification": {
+        "title": "Komplain dengan id 2 telah selesai.",
+        "body": "Hello World1!"
+    }, 
+}
+
+###
+POST https://ss-api.evnbdev.com/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MSwibmFtYUxlbmdrYXAiOiJKZWZmcnkgQW5na2FzYXJpIiwidXNlcm5hbWUiOiJqZWYiLCJ1c2VyTGV2ZWwiOjEsImlkQ2FiYW5nIjpudWxsLCJjYWJhbmciOm51bGwsImlkTG9rYXNpIjpudWxsLCJsb2thc2kiOm51bGwsImlhdCI6MTY0ODA5MTk3MywiZXhwIjoxNjQ4MTEzNTczfQ.eKnlak_6_VjKt5JsWexLFB-7HHMIN63h94-Uau5hbpo
+
+type=projects

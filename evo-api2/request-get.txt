@@ -1,0 +1,60 @@
+*: Parameter wajib
+
+- Barang:
+POST https://hendryanto.xyz/testing/evo-api/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: <TOKEN_LOGIN didapatkan dari request Login>
+
+Parameter:
+*type=barang
+*kodeKategoriApps=<Kode_Kategori_Apps>
+nama=<Nama>
+
+- Customers
+POST https://hendryanto.xyz/testing/evo-api/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: <TOKEN_LOGIN didapatkan dari request Login>
+
+Parameter:
+*type=customers
+kodeCustomer=<Kode_Customer>
+
+- Detail Paket
+POST https://hendryanto.xyz/testing/evo-api/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: <TOKEN_LOGIN didapatkan dari request Login>
+
+Parameter:
+*type=detail_paket
+kodePaket=<Kode_Paket>
+
+- Login: (Waktu expired di set 6 jam.)
+POST https://hendryanto.xyz/testing/evo-api/signin HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+
+Parameter:
+*type=signin
+*username=<UserID>
+*password=<Password>
+
+- Kategori Barang
+POST https://hendryanto.xyz/testing/evo-api/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: <TOKEN_LOGIN didapatkan dari request Login>
+
+Parameter:
+*type=kategori_barang
+
+- Paket
+POST https://hendryanto.xyz/testing/evo-api/fetch HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Accept: application/json
+Authorization: <TOKEN_LOGIN didapatkan dari request Login>
+
+Parameter:
+*type=paket
